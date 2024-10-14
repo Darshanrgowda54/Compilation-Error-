@@ -1,0 +1,23 @@
+ERROR
+
+
+comp.c: In function 'main':
+comp.c:9:38: error: expected ')' before 'b'
+     printf("The value of b is: %.2f" b);   // Error 2: Missing comma
+                                      ^
+comp.c:12:5: error: expected ';' before 'int'
+     int sum = a + b;                       // Error 4: Type mismatch (int + float)
+     ^~~
+comp.c:14:9: error: 'sum' undeclared (first use in this function)
+     if (sum = 10)                           // Error 5: Assignment instead of comparison
+         ^~~
+comp.c:14:9: note: each undeclared identifier is reported only once for each function it appears in
+comp.c:18:28: error: expected ')' before ';' token
+         printf("i is %d", i;
+                            ^
+comp.c:29:16: error: too many decimal points in number
+     double z = 4.2.3;                       // Error 10: Incorrect floating point format
+                ^~~~~
+comp.c:33:1: error: expected ';' before '}' token
+ }
+ ^
